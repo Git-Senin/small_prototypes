@@ -1,0 +1,22 @@
+#include <iostream>
+
+class calc{
+private:
+    int x;
+public:
+    calc(int a){
+        x = a;
+    }
+    void add(int a){
+        x += a;
+    }
+    void displayNum(){
+        std::cout << x << std::endl;
+    }
+};
+
+int main(){
+    calc bob(10);
+    bob.add(2);
+    bob.displayNum();
+}
